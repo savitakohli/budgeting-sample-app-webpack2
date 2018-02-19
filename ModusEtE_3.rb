@@ -39,7 +39,7 @@ def teardown
   
 def Assert_Reports()
   puts "Starting Assert_Reports ..."
-    return (assert_equal "Report", @driver.find_element(:link, "Reports").text) 
+    return (assert_equal "Reports", @driver.find_element(:link, "Reports").text) 
   rescue =>err
        puts "Report: failed  - Asserted Value not found"
 end
@@ -186,7 +186,7 @@ def Lnk_Budget()
     Assert_Amount()
     Assert_Grocery()
     Assert_Amt()
-    Assert_Inflow()
+    ##Assert_Inflow()
     Assert_Outflow()
     Assert_WorkingBalance()
     Assert_BalanceRow()
